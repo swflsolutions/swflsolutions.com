@@ -96,7 +96,7 @@ const Index = () => {
               <span className="text-accent">Owner's Representative</span>
             </h1>
             <p className="mt-7 text-lg sm:text-xl text-primary-foreground/85 leading-relaxed max-w-2xl animate-fade-in-up">
-              From feasibility to final walkthrough, SWFL Solutions protects your investment with independent expertise — exclusively on your side, never the contractor's.
+              From feasibility to final walkthrough, SWFL Solutions protects your investment with independent expertise — exclusively on your side.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in-up">
               <Button
