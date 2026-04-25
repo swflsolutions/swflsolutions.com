@@ -5,7 +5,6 @@ import {
   ClipboardCheck,
   HardHat,
   LifeBuoy,
-  LandPlot,
   Handshake,
   PiggyBank,
   Award,
@@ -42,11 +41,6 @@ const services = [
     desc: "Independent on-site quality assurance, permitting coordination, and inspections so the work is done right — the first time.",
   },
   {
-    icon: LandPlot,
-    title: "Real Estate Development",
-    desc: "Feasibility, entitlements, cost estimating, and bank negotiations — the strategic guidance to develop with confidence.",
-  },
-  {
     icon: Building2,
     title: "Pre-Construction Advisory",
     desc: "Site assessment, design review, and contractor selection to set your project up for success before ground is broken.",
@@ -77,7 +71,7 @@ const Index = () => {
       <section className="relative min-h-[100vh] flex items-center text-primary-foreground overflow-hidden">
         <img
           src={heroImg}
-          alt="Owner's representative reviewing blueprints at a Florida luxury home construction site"
+          alt="Owner representative reviewing blueprints at a Florida luxury home construction site"
           className="absolute inset-0 w-full h-full object-cover"
           width={1920}
           height={1080}
@@ -93,7 +87,7 @@ const Index = () => {
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-7xl font-semibold leading-[1.05] animate-fade-in-up">
               Working for You as Your{" "}
-              <span className="text-accent">Owner's Representative</span>
+              <span className="text-accent">Owner Representative</span>
             </h1>
             <p className="mt-7 text-lg sm:text-xl text-primary-foreground/85 leading-relaxed max-w-2xl animate-fade-in-up">
               From feasibility to final walkthrough, SWFL Solutions protects your investment with independent expertise — exclusively on your side.

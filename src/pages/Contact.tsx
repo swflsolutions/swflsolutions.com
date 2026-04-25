@@ -76,10 +76,10 @@ const Contact = () => {
               Proudly Serving All of Southwest Florida
             </h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              From Sarasota to Naples and the surrounding coastal communities — including Englewood, Venice, North Port, Port Charlotte, Punta Gorda, Cape Coral, Fort Myers, and Bonita Springs.
+              From Sarasota to the surrounding coastal communities — including Englewood, Venice, North Port, Port Charlotte, and Punta Gorda.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              {["Englewood", "Venice", "Sarasota", "North Port", "Port Charlotte", "Punta Gorda", "Cape Coral", "Fort Myers", "Naples"].map(
+              {["Englewood", "Venice", "Sarasota", "North Port", "Port Charlotte", "Punta Gorda"].map(
                 (city) => (
                   <span
                     key={city}

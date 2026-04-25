@@ -10,7 +10,7 @@ export const Footer = () => {
             SWFL <span className="text-accent">Solutions</span>
           </Link>
           <p className="mt-4 text-sm text-primary-foreground/75 leading-relaxed">
-            Your trusted Owner's Representative for construction, project management, and real estate development across Southwest Florida.
+            Your trusted Owner Representative for construction and project management across Southwest Florida.
           </p>
           <div className="mt-6 inline-block w-12 h-[2px] bg-accent" />
         </div>
@@ -22,7 +22,6 @@ export const Footer = () => {
             <li><Link to="/services" className="hover:text-accent transition-colors">Project Management</Link></li>
             <li><Link to="/services" className="hover:text-accent transition-colors">Project Recovery</Link></li>
             <li><Link to="/services" className="hover:text-accent transition-colors">Construction Oversight</Link></li>
-            <li><Link to="/services" className="hover:text-accent transition-colors">Real Estate Development</Link></li>
           </ul>
         </div>
 
