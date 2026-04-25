@@ -13,7 +13,6 @@ const values = [
 ];
 
 const credentials = [
-  { label: "Professional", desc: "​Representation and Project Managment" },
   { label: "Experienced", desc: "Years of Florida project history" },
   { label: "Insured", desc: "Fully bonded and insured for your protection" },
   { label: "Independent", desc: "Exclusively on your side — never the contractor's" },
