@@ -54,9 +54,9 @@ const services = [
 ];
 
 const process = [
-  { num: "01", title: "Feasibility", desc: "Site analysis, budgeting, and go/no-go strategy." },
+  { num: "01", title: "Analysis", desc: "Project budget, scope, and evaluation." },
   { num: "02", title: "Design", desc: "Architect & engineer coordination with value engineering." },
-  { num: "03", title: "Permitting", desc: "Entitlements, approvals, and regulatory navigation." },
+  { num: "03", title: "Coordination", desc: "Contractor bidding and scheduling." },
   { num: "04", title: "Oversight", desc: "On-site management, quality control, and reporting." },
   { num: "05", title: "Closeout", desc: "Final inspections, punch list, and warranty handoff." },
 ];
