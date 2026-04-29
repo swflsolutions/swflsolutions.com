@@ -144,6 +144,7 @@ const Index = () => {
             eyebrow="What We Do"
             title="Your Professional Advocate from Vision to Completion"
             description={`What is an Owner Representative? We are the “Voice of the Owner,” protecting your interests through every phase of your construction or real estate project. We don’t replace your contractor — we provide independent oversight, clear communication, and accountability so your project stays aligned with your goals. Construction is too important — and too expensive — to navigate alone. Our services are built around one principle: 100% loyalty to you, the owner.`}
+            description2="While every project is different, the cost of independent owner representation is often small compared with the cost of preventable mistakes, unmanaged change orders, poor communication, schedule and construction delays. Our role is to help protect your investment before small issues become expensive problems."
           />
           <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map(({ icon: Icon, title, desc }) => (

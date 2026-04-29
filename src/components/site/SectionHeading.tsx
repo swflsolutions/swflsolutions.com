@@ -4,6 +4,7 @@ interface SectionHeadingProps {
   eyebrow?: string;
   title: string;
   description?: string;
+  description2?: string;
   align?: "left" | "center";
   className?: string;
   light?: boolean;
@@ -13,6 +14,7 @@ export const SectionHeading = ({
   eyebrow,
   title,
   description,
+  description2,
   align = "center",
   className,
   light = false,
@@ -50,6 +52,16 @@ export const SectionHeading = ({
           )}
         >
           {description}
+        </p>
+      )}
+      {description2 && (
+        <p
+          className={cn(
+            "mt-4 text-base sm:text-lg leading-relaxed",
+            light ? "text-primary-foreground/80" : "text-muted-foreground",
+          )}
+        >
+          {description2}
         </p>
       )}
     </div>
