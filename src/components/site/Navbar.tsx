@@ -71,14 +71,14 @@ export const Navbar = () => {
           href="tel:941-249-5750"
           translate="no"
           className={cn(
-            "font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight transition-colors leading-none lg:flex-1 lg:text-center",
+            "font-serif text-2xl sm:text-3xl lg:text-3xl xl:text-4xl font-semibold tracking-tight transition-colors leading-none whitespace-nowrap lg:flex-1 lg:text-center",
             transparent ? "text-primary-foreground hover:text-accent" : "text-primary hover:text-accent",
           )}
         >
           941-249-5750
         </a>
 
-        <nav className="hidden lg:flex items-end gap-8">
+        <nav className="hidden lg:flex items-end gap-4 xl:gap-6">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
