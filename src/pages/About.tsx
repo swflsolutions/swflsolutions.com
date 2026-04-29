@@ -25,7 +25,7 @@ const About = () => {
         image={heroImg}
         eyebrow="About Us"
         title="Your Trusted Partner in Southwest Florida"
-        subtitle="Founded in Englewood, Florida, SWFL Solutions was built on a simple belief: every owner deserves an expert in their corner — one who answers only to them."
+        subtitle="SWFL Solutions was built on a simple belief: every owner deserves an expert in their corner — one who answers only to them."
       />
 
       {/* Our Journey */}
@@ -42,10 +42,10 @@ const About = () => {
           </div>
           <div className="space-y-5 text-foreground/80 leading-relaxed text-base lg:text-lg">
             <p>
-              SWFL Solutions was founded in Englewood, Florida to fill a critical gap in the construction and real estate market: independent, owner representation. Too many homeowners and businesses had been burned by projects that ran late, over budget, or fell short of what was promised — often because they had no one in their corner managing their interests.
+              SWFL Solutions was founded to fill a critical gap in the construction and real estate market -- independent, owner representation. Too many homeowners and businesses had been burned by projects that ran late, over budget, or fell short of what was promised — often because they had no one in their corner managing their interests.
             </p>
             <p>
-              We serve clients in Southwest Florida — from individual homeowners building their coastal&nbsp;dream&nbsp;residence to commercial developers managing multi-property portfolios. Whether the project is large or small, residential or commercial, our role stays the same: making sure your vision and investment is secure, on budget, and on track from start to finish.
+              We serve clients in Southwest Florida — from individual homeowners building their dream residence to commercial developers managing multi-property portfolios. Whether the project is large or small, residential or commercial, our role stays the same: making sure your vision and investment is secure, on budget, and on track from start to finish.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ const About = () => {
               </p>
             </div>
             <div className="border-l-4 border-accent pl-6 py-2">
-              <h3 className="font-serif text-xl font-semibold text-primary mb-2">For Businesses & Developers</h3>
+              <h3 className="font-serif text-xl font-semibold text-primary mb-2">For Businesses, HOAs & Realestate Developers</h3>
               <p className="text-foreground/80 leading-relaxed">
                 Commercial projects demand professional oversight. We bring the discipline, documentation, and decision support that protects your capital and accelerates your timeline — with the discretion and reliability your business requires.
               </p>

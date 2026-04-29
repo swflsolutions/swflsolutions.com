@@ -41,8 +41,8 @@ const services = [
       "Project assessment and detailed scope development",
       "Cost estimating and budget management",
       "Schedule development, tracking, and acceleration",
-      "Contractor and subcontractor coordination",
-      "Quality control, RFIs, and submittal management",
+      "Contractor, subcontractor and inspection coordination",
+      "Oversee project deliverables, inquiries and documentation",
     ],
   },
   {
@@ -74,7 +74,7 @@ const services = [
     bullets: [
       "Permitting and entitlement coordination",
       "On-site inspections at every critical milestone",
-      "Code compliance and quality verification",
+      "Plan adherence and work verification",
       "Photo documentation and progress reporting",
       "Punch list management and final closeout",
     ],
