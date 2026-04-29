@@ -35,7 +35,7 @@ export const Navbar = () => {
         transparent ? "bg-transparent" : "bg-background/95 backdrop-blur-md shadow-card-soft border-b border-border",
       )}
     >
-      <div className="container-prose flex flex-col lg:flex-row lg:items-end lg:justify-between gap-2 lg:gap-6 py-4 lg:py-0 lg:h-28">
+      <div className="container-prose flex flex-col lg:flex-row lg:items-end lg:justify-between gap-2 lg:gap-6 py-4 lg:py-0 lg:h-28 lg:pb-5">
         <div className="flex items-center justify-between lg:block">
           <Link to="/" className="flex flex-col leading-tight group" translate="no">
             <span
