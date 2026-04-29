@@ -106,16 +106,6 @@ export const Navbar = () => {
           </Button>
         </nav>
 
-        <button
-          className={cn(
-            "lg:hidden p-2 rounded-md transition-colors",
-            transparent ? "text-primary-foreground" : "text-primary",
-          )}
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
       </div>
 
       {open && (
