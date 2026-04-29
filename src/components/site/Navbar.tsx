@@ -39,7 +39,7 @@ export const Navbar = () => {
         <Link to="/" className="flex flex-col leading-tight group">
           <span
             className={cn(
-              "font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight transition-colors",
+              "font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight transition-colors",
               transparent ? "text-primary-foreground" : "text-primary",
             )}
           >
