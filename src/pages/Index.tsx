@@ -62,7 +62,7 @@ const process = [
 ];
 
 const advantages = [
-  { icon: PiggyBank, title: "Cost Savings", desc: "Independent oversight typically saves owners 5–15% through avoided change orders, value engineering, and contractor accountability." },
+  { icon: PiggyBank, title: "Cost Savings", desc: "Independent oversight reduces costs by keeping the project aligned with budget, schedule, and scope." },
   { icon: Award, title: "Expert Management", desc: "We manage oversight of your project ensuring seamless flow and completion. Working exclusively for you — not the contractor or developer." },
   { icon: Compass, title: "Direct Control", desc: "You stay informed and in command. We translate the complexities and present clear, actionable choices." },
   { icon: Clock, title: "Rapid Completion", desc: "Proactive scheduling, vendor coordination, and issue resolution keep your project moving — and on time." },
