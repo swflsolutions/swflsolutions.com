@@ -59,7 +59,7 @@ export const Navbar = () => {
           href="tel:941-249-5750"
           translate="no"
           className={cn(
-            "hidden md:block font-serif text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight transition-colors leading-none whitespace-nowrap md:flex-1 md:text-center",
+            "hidden md:block font-serif text-xl md:text-xl lg:text-2xl xl:text-3xl font-semibold tracking-tight transition-colors leading-none whitespace-nowrap md:flex-1 md:text-center",
             transparent ? "text-primary-foreground hover:text-accent" : "text-primary hover:text-accent",
           )}
         >
