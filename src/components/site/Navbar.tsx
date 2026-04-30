@@ -120,7 +120,7 @@ export const Navbar = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-background border-t border-border shadow-elegant">
+        <div className="md:hidden bg-background border-t border-border shadow-elegant absolute inset-x-0 top-full">
           <nav className="container-prose py-6 flex flex-col gap-1">
             {navItems.map((item) => (
               <NavLink
