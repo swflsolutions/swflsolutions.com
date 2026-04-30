@@ -1,65 +1,52 @@
+# Responsive Layout Testing Plan
 
-## SWFL Solutions — Professional Website
+Visual verification of all four pages across desktop, tablet, and mobile viewports in both portrait and landscape orientations. Read-only — no code changes unless you approve fixes after the audit.
 
-A polished, corporate-professional 4-page site for an Owner Representative firm in Southwest Florida (Englewood, FL), designed to build trust with homeowners, businesses/developers, and real estate investors.
+## Pages tested
+1. Home (`/`)
+2. Services (`/services`)
+3. About (`/about`)
+4. Contact (`/contact`)
 
-### Design System
-- **Palette:** Deep navy (primary), warm gold accent, ivory/off-white background, charcoal text — all HSL semantic tokens
-- **Typography:** Serif headlines (Playfair Display) + clean sans-serif body (Inter)
-- **Style:** Generous whitespace, large hero imagery, gold dividers and accents, refined cards with soft shadows, sticky transparent-to-solid nav, gradient gold/navy utilities
-- All tokens defined in `src/index.css` + `tailwind.config.ts`
+## Viewports per page (6 sizes)
 
-### Global Elements
-- **Sticky Navigation (`Navbar.tsx`):** Brand "SWFL Solutions" with tagline "Owner Representative · Project Management" · Links: Home / Services / About / Contact · Gold "Free Consultation" CTA · Transparent on home hero, solid elsewhere · Mobile hamburger menu
-- **Footer (`Footer.tsx`):** Brand block, Services list, Company links, Contact info (941-249-5750 · office@swflsolutions.com · Englewood, FL 34224)
+| Class | Portrait | Landscape |
+|-------|----------|-----------|
+| Desktop | 1920×1080 | 1366×768 |
+| Tablet | 820×1180 (iPad Air) | 1180×820 |
+| Mobile | 390×844 (iPhone 14) | 844×390 |
 
-### Page 1 — Home (`src/pages/Index.tsx`)
-1. **Hero:** Full-bleed image with gradient overlay, eyebrow "Southwest Florida", headline "Working for You as Your Owner Representative", intro copy + two CTAs (Schedule Free Assessment / View Our Services)
-2. **Services band:** Navy strip listing the 4 core services separated by gold diamonds
-3. **Services grid — "Your Advocate from Vision to Completion":** 6 cards
-   - Owner Representation
-   - Project Management
-   - Project Recovery
-   - Construction Oversight
-   - Pre-Construction Advisory
-   - Project Assessment
-4. **Process timeline — "How We Work" / "A Proven, Transparent Process":** 5 numbered steps
-   - 01 Analysis · 02 Design · 03 Coordination · 04 Oversight · 05 Closeout
-5. **Why SWFL Solutions — "The Advantage of True Owner Advocacy":** 6 value cards (Cost Savings, Expert Management, Direct Control, Rapid Completion, Stress Reduction, Transparent Communication)
-6. **Final CTA banner** (shared `CTABanner` component)
+Total: **4 pages × 6 viewports = 24 screenshots**
 
-### Page 2 — Services (`src/pages/Services.tsx`)
-- PageHero: "Owner Representation & Project Management Services - Built Around You"
-- Sticky in-page quick-nav linking the 4 service sections
-- 4 detailed service sections with image, intro, body, and bulleted sub-services (alternating background, image side-swap):
-  - Owner Representation
-  - Project Management
-  - Project Recovery
-  - Construction Oversight
-- Closing CTA: "Not Sure Where To Begin?"
+## What I'll inspect on each capture
 
-### Page 3 — About (`src/pages/About.tsx`)
-- PageHero: "Your Trusted Partner in Southwest Florida"
-- **Our Journey — "Built in Florida. Built on Trust."** Two-column intro about founding in Englewood and the SWFL service area
-- **Mission & Values — "What Drives Every Decision We Make":** 4 value cards (Loyalty, Integrity, Excellence, Vigilance)
-- **Why Choose Us — "100% Loyalty. Zero Conflicts."** Three audience callouts with gold left border:
-  - For Homeowners
-  - For Businesses & Developers
-  - For Real Estate Investors
-- Closing CTA: "Let's Talk About Your Project"
+- **Navbar**: logo + phone number + nav links alignment; mobile hamburger toggle (open + closed on mobile sizes)
+- **Hero**: headline wrapping, CTA button stacking, background crop, no text clipped under fixed nav
+- **Section headings**: line breaks and readability of long descriptions (e.g. "Voice of the Owner" paragraph)
+- **Service cards**: column count transitions (3 → 2 → 1)
+- **Process timeline**: 5-col → 3-col → 1-col, connector lines
+- **Advantages grid**: icon + text alignment
+- **Footer**: column collapse and spacing
+- **Universal checks**: horizontal scroll, overlapping elements, awkward whitespace, tap target sizes (≥44px) on mobile, illegible text
 
-### Page 4 — Contact (`src/pages/Contact.tsx`)
-- PageHero: "Schedule Your Free Project Assessment"
-- Three large contact cards: **Call** (941-249-5750), **Email** (office@swflsolutions.com), **Visit** (Englewood, FL 34224) — gold gradient icons, click-to-call/email/maps
-- **Service Area** block: "Proudly Serving Southwest Florida" with city pill badges (Englewood, Venice, Sarasota, North Port, Port Charlotte, Punta Gorda) and county mentions.
-- **Response Promise** card: same-day calls, 1-business-day email, free consultation, no-obligation assessment
-- Final navy CTA section: "Ready to Get Started?" with prefilled mailto and tel buttons
+## Process
 
-### Imagery
-- Per-page hero images (`hero-home.jpg`, `hero-services.jpg`, `hero-about.jpg`, `hero-contact.jpg`)
-- Service section images (`service-owner-rep.jpg`, `service-pm.jpg`, `service-recovery.jpg`, `service-oversight.jpg`)
-- All images optimized and lazy-loaded
+1. Open browser at sandbox preview
+2. For each page → resize to each of the 6 viewports → screenshot → review
+3. On mobile sizes, also open the hamburger menu and screenshot it
+4. Compile findings into a single report grouped by **Severity** (Critical / Minor / Polish) and **Page/Viewport**
 
-### Out of Scope
-- No projects/portfolio page
-- No backend, contact form, or database — contact page surfaces phone, email, and location only
+## Deliverable
+
+A written report listing every issue found with:
+- Page + viewport where it occurs
+- What's wrong (with screenshot reference)
+- Suggested fix
+
+After you review the report, you can tell me which issues to fix and I'll switch to build mode to apply the changes.
+
+## Notes
+
+- The browser tool snaps to its nearest supported size, so actual captures may be ±a few pixels from the targets above (e.g. 390×844 is exact; iPad Air 820×1180 is supported exactly).
+- I won't interact with forms (Contact page) destructively — only visual inspection plus opening the page.
+- This is purely a visual audit; no code changes happen during the plan execution.
