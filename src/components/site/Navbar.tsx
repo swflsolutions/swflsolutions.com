@@ -35,11 +35,11 @@ export const Navbar = () => {
         transparent ? "bg-transparent" : "bg-background/95 backdrop-blur-md shadow-card-soft border-b border-border",
       )}
     >
-      <div className="container-prose flex items-center md:items-end justify-between gap-3 md:gap-6 py-3 md:py-0 md:h-24 lg:h-28 md:pb-6 lg:pb-8">
+      <div className="container-prose flex items-center nav:items-end justify-between gap-3 nav:gap-6 py-3 nav:py-0 nav:h-24 lg:h-28 nav:pb-6 lg:pb-8">
         <Link to="/" className="flex flex-col leading-tight group flex-shrink-0 whitespace-nowrap" translate="no">
           <span
             className={cn(
-              "font-serif text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight transition-colors leading-none whitespace-nowrap",
+              "font-serif text-2xl sm:text-3xl nav:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tight transition-colors leading-none whitespace-nowrap",
               transparent ? "text-primary-foreground" : "text-primary",
             )}
           >
@@ -47,7 +47,7 @@ export const Navbar = () => {
           </span>
           <span
             className={cn(
-              "mt-1 text-[9px] sm:text-[10px] md:text-xs uppercase tracking-[0.15em] md:tracking-[0.18em] font-medium transition-colors hidden sm:block",
+              "mt-1 text-[9px] sm:text-[10px] nav:text-xs uppercase tracking-[0.15em] nav:tracking-[0.18em] font-medium transition-colors hidden sm:block",
               transparent ? "text-primary-foreground/80" : "text-muted-foreground",
             )}
           >
@@ -59,7 +59,7 @@ export const Navbar = () => {
           href="tel:941-249-5750"
           translate="no"
           className={cn(
-            "hidden md:block font-serif text-xl md:text-xl lg:text-2xl xl:text-3xl font-semibold tracking-tight transition-colors leading-none whitespace-nowrap md:flex-1 md:text-center",
+            "hidden nav:block font-serif text-xl nav:text-xl lg:text-2xl xl:text-3xl font-semibold tracking-tight transition-colors leading-none whitespace-nowrap nav:flex-1 nav:text-center",
             transparent ? "text-primary-foreground hover:text-accent" : "text-primary hover:text-accent",
           )}
         >
@@ -71,7 +71,7 @@ export const Navbar = () => {
           translate="no"
           aria-label="Call 941-249-5750"
           className={cn(
-            "md:hidden inline-flex items-center gap-1.5 px-3 py-2 rounded-md font-medium text-sm transition-colors min-h-[44px]",
+            "nav:hidden inline-flex items-center gap-1.5 px-3 py-2 rounded-md font-medium text-sm transition-colors min-h-[44px]",
             transparent ? "text-primary-foreground hover:text-accent" : "text-primary hover:text-accent",
           )}
         >
@@ -80,7 +80,7 @@ export const Navbar = () => {
 
         <button
           className={cn(
-            "md:hidden p-2 rounded-md transition-colors min-h-[44px] min-w-[44px] inline-flex items-center justify-center",
+            "nav:hidden p-2 rounded-md transition-colors min-h-[44px] min-w-[44px] inline-flex items-center justify-center",
             transparent ? "text-primary-foreground" : "text-primary",
           )}
           onClick={() => setOpen(!open)}
@@ -89,7 +89,7 @@ export const Navbar = () => {
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
 
-        <nav className="hidden md:flex items-end gap-3 lg:gap-4 xl:gap-6">
+        <nav className="hidden nav:flex items-end gap-3 lg:gap-4 xl:gap-6">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
@@ -120,7 +120,7 @@ export const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden bg-background border-t border-border shadow-elegant absolute inset-x-0 top-full">
+        <div className="nav:hidden bg-background border-t border-border shadow-elegant absolute inset-x-0 top-full">
           <nav className="container-prose py-6 flex flex-col gap-1">
             {navItems.map((item) => (
               <NavLink
